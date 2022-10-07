@@ -2,7 +2,7 @@
 var currentQuestion = 0;
 var score = 0;
 var c = 60;
-var totquestions = questions.length;
+var totalQuestions = questions.length;
 var quizContainer = document.getElementById("quiz-container");
 var questionEl = document.getElementById("question");
 var opt1 = document.getElementById("opt1");
@@ -38,7 +38,7 @@ function loadNextQuestion(){
     }
     userChoice.checked = false;
     currentQuestion++;
-    if (currentQuestion == totquestions){
+    if (currentQuestion == totalQuestions){
         startBtn.style.visibility='hidden';
         nextBtn.style.visibility='hidden';
         quizContainer.style.display="none";
